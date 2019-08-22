@@ -30,6 +30,12 @@ variables = {
 #        'Mj1j2_pf04_20p' :{'name':'Mj1j2_pf04_20p','title':'m_{Q*} [TeV] (pf04)','bin':200,'xmin':10.0,'xmax':50.0, 'divide':1000},
 #        'Mj1j2_calo04' :{'name':'Mj1j2_calo04','title':'m_{Q*} [TeV] (calo04)','bin':200,'xmin':10.0,'xmax':50.0, 'divide':1000},
 
+        'Mj1j2_pf04_2t' :{'name':'Mj1j2_pf04_2t','title':'m_{Z\'} [TeV] (pf04)','bin':200,'xmin':10.0,'xmax':50.0, 'divide':1000},
+        'Mj1j2_pf04_3t' :{'name':'Mj1j2_pf04_3t','title':'m_{Z\'} [TeV] (pf04)','bin':200,'xmin':10.0,'xmax':50.0, 'divide':1000},
+        'Mj1j2_pf04_4t' :{'name':'Mj1j2_pf04_4t','title':'m_{Z\'} [TeV] (pf04)','bin':200,'xmin':10.0,'xmax':50.0, 'divide':1000},
+        'Mj1j2_pf04_5t' :{'name':'Mj1j2_pf04_5t','title':'m_{Z\'} [TeV] (pf04)','bin':200,'xmin':10.0,'xmax':50.0, 'divide':1000},
+
+
 }
 
 variables2D = {}

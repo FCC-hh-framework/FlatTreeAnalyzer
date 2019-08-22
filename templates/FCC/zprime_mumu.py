@@ -5,10 +5,19 @@ ana_tex = "Z\'_{SSM} #rightarrow #mu^{+}#mu^{-}"
 
 ### variable list
 variables = {
-#    "ptzp":{"name":"zprime_muon_pt","title":"p_{T}^{Z'} [GeV]","bin":200,"xmin":0,"xmax":20000},
-    "mzp":{"name":"zprime_muon_m","title":"m_{Z'} [TeV]","bin":125,"xmin":0,"xmax":50, "divide":1000},
-#    "ptmu_1":{"name":"lep1_pt","title":"p_{T}^{#mu, max} [TeV]","bin":100,"xmin":5,"xmax":20, "divide":1000},
-#    "ptmu_2":{"name":"lep2_pt","title":"p_{T}^{#mu, min} [TeV]","bin":100,"xmin":5,"xmax":20, "divide":1000},
+    "ptzp":{"name":"zprime_muon_pt","title":"p_{T}^{Z'} [GeV]","bin":200,"xmin":0,"xmax":20000},
+    "mzp":{"name":"zprime_muon_m","title":"m_{Z'} [TeV]","bin":45,"xmin":5,"xmax":50, "divide":1000},
+    "ptmu_1":{"name":"lep1_pt","title":"p_{T}^{#mu, max} [TeV]","bin":100,"xmin":5,"xmax":20, "divide":1000},
+    "ptmu_2":{"name":"lep2_pt","title":"p_{T}^{#mu, min} [TeV]","bin":100,"xmin":5,"xmax":20, "divide":1000},
+
+    "mzp_2t":{"name":"zprime_muon_m_2t","title":"m_{Z'} [TeV]","bin":45,"xmin":5,"xmax":50, "divide":1000},
+    "mzp_3t":{"name":"zprime_muon_m_3t","title":"m_{Z'} [TeV]","bin":45,"xmin":5,"xmax":50, "divide":1000},
+    "mzp_4t":{"name":"zprime_muon_m_4t","title":"m_{Z'} [TeV]","bin":45,"xmin":5,"xmax":50, "divide":1000},
+    "mzp_5t":{"name":"zprime_muon_m_5t","title":"m_{Z'} [TeV]","bin":45,"xmin":5,"xmax":50, "divide":1000},
+
+    "mzp_hl":{"name":"zprime_muon_m_hl","title":"m_{Z'} [TeV]","bin":45,"xmin":5,"xmax":50, "divide":1000},
+    "mzp_2hl":{"name":"zprime_muon_m_2hl","title":"m_{Z'} [TeV]","bin":45,"xmin":5,"xmax":50, "divide":1000},
+
 }
 
 variables2D = {}

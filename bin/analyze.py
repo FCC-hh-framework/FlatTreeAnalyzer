@@ -72,6 +72,8 @@ def main():
 
     # tree location
     treePath = '/heppy.FCChhAnalyses.{}.TreeProducer.TreeProducer_1/tree.root'.format(analysisName)
+    if "FCCee" in processDict:
+        treePath = '/FCCeeAnalyses.{}.TreeProducer.TreeProducer_1/tree.root'.format(analysisName)
 
     #multi-threading
     MT = ops.MT
