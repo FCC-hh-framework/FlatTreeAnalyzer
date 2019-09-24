@@ -272,8 +272,15 @@ def producePlots(param, block, sel, ops):
                 lt = "HE-LHC Simulation (Delphes)"
                 rt = "#sqrt{{s}} = 27 TeV,   L = {:.0f} ab^{{-1}}".format(intLumiab)
         except :
-            print 'FCC'
+            print 'Not HELHC'
 
+        try:
+            fccee=param.FCCee
+            if fccee:
+                lt = "FCC-ee Simulation (Delphes)"
+                rt = "#sqrt{{s}} = {:.1f} GeV,   L = {:.0f} ab^{{-1}}".format(param.Energy,intLumiab)
+        except :
+            print 'Not HELHC'
         produceStackedPlots(processes, selections, variables, colors, lumi, pdir, lt, rt, False, False, hfile, param.ana_tex)
         produceStackedPlots(processes, selections, variables, colors, lumi, pdir, lt, rt, True, False, hfile, param.ana_tex)
         produceStackedPlots(processes, selections, variables, colors, lumi, pdir, lt, rt, False, True, hfile, param.ana_tex)
@@ -617,7 +624,7 @@ def produceStackedPlots(processes, selections, variables, colors, intLumi, pdir,
 
              filename = '{}_{}_{}_{}'.format(v, selstr, stackstr, logstr)
 
-             leg = TLegend(0.55,0.86 - legsize,0.86,0.88)
+             leg = TLegend(0.58,0.86 - legsize,0.86,0.88)
              leg.SetFillColor(0)
              leg.SetFillStyle(0)
              leg.SetLineColor(0)

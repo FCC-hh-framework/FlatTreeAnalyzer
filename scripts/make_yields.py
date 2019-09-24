@@ -9,8 +9,10 @@ else : path = "./"
 
 
 #variable="Jet1_trk02_SD_Cor_m"
-#variable="mzp"
-variable="h_mjj_l2"
+variable="mzp"
+variable="mt"
+variable="Jet1_pf04_eta"
+#variable="h_mjj_l2"
 #variable="Mj1j2_pf08_MetCorr"
 
 lumi=3e+7
@@ -36,6 +38,7 @@ for tree in Trees :
     key = tkey.GetName()
     if key.find(variable)>=0 : 
       # form samples list
+      print key
       str_hist=key.replace("_sel0_"+variable,"")
       if str_hist.find("_sel")<0: sample_list.append(str_hist)
       # form cuts list
